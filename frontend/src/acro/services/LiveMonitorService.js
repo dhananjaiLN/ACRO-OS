@@ -14,7 +14,7 @@ class LiveMonitorService {
         }
 
         this.socket = new WebSocket(
-            "wss://acro-os.onrender.com/ws/live"
+            `${import.meta.env.VITE_WS_URL}/ws/live`
         );
 
         this.socket.onopen = () => {
