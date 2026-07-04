@@ -14,7 +14,7 @@ class LiveMonitorService {
         }
 
         this.socket = new WebSocket(
-            "ws://127.0.0.1:8000/ws/live"
+            "wss://acro-os.onrender.com/ws/live"
         );
 
         this.socket.onopen = () => {
