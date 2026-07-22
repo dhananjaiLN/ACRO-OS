@@ -340,7 +340,7 @@ pip install -r requirements.txt
 Start the FastAPI server.
 
 ```bash
-uvicorn main:app --reload
+python -m uvicorn api.app:app --reload
 ```
 
 The backend will be available at
