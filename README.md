@@ -1,1020 +1,621 @@
 # Adaptive Cloud Resource Orchestrator (ACRO OS)
 
+<p align="center">
+  <strong>A Full-Stack Cloud Resource Scheduling and Operating System Analytics Platform</strong>
+</p>
+
+<p align="center">
+  Simulate Cloud Workloads • Evaluate Scheduling Algorithms • Monitor Live System Resources • Analyze Performance
+</p>
+
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![WebSockets](https://img.shields.io/badge/WebSockets-Real--Time-orange?style=flat-square)
+
+</p>
+
+---
+
+## Overview
+
 Adaptive Cloud Resource Orchestrator (ACRO OS) is a full-stack cloud resource scheduling and operating system analytics platform that combines configurable cloud infrastructure simulation with real-time operating system monitoring.
 
-Unlike traditional CPU scheduling simulators that execute algorithms on static datasets, ACRO OS provides an interactive environment capable of evaluating scheduling strategies using both simulated cloud workloads and live operating system processes. The platform integrates workload generation, adaptive scheduling, system monitoring, analytics, visualization, and report generation into a single modular architecture.
+Unlike traditional scheduling simulators that evaluate algorithms using predefined workloads, ACRO OS enables users to create configurable cloud environments, generate dynamic workloads, execute multiple scheduling strategies, monitor live system resources, analyze scheduling performance, and generate comprehensive performance reports—all through a unified web interface.
 
-The project has been designed as a complete scheduling laboratory where users can configure cloud environments, simulate workload execution, compare scheduling algorithms, monitor live system resources, analyse scheduler performance, and generate detailed analytical reports through an intuitive web interface.
+The project bridges the gap between cloud simulation and live operating system analysis by integrating workload generation, adaptive scheduling, real-time monitoring, analytics, and reporting into a modular architecture that is both extensible and easy to experiment with.
 
 ---
 
-# Project Status
+## Live Demo
 
-ACRO OS currently supports:
+| Resource | URL |
+|----------|-----|
+| **Frontend (Vercel)** | https://acro-os.vercel.app |
+| **Backend API (Render)** | https://acro-os.onrender.com |
+| **GitHub Repository** | https://github.com/dhananjaiLN/ACRO-OS |
 
-- Configurable cloud resource simulation
-- Host and Virtual Machine management
+---
+
+## Project at a Glance
+
+| Property | Details |
+|-----------|---------|
+| **Project Type** | Full-Stack Systems Application |
+| **Domain** | Cloud Computing • Operating Systems |
+| **Frontend** | React, Vite, Tailwind CSS |
+| **Backend** | FastAPI, Python |
+| **Real-Time Communication** | WebSockets |
+| **Simulation Engine** | Custom Tick-Based Cloud Simulation Engine |
+| **Scheduling Algorithms** | FCFS, SJF, Priority, Round Robin, Multi-Level Feedback Queue (MLFQ), Adaptive Scheduler |
+| **Monitoring** | Live CPU, Memory, Disk, Network and Process Monitoring |
+| **Analytics** | Scheduler Comparison, Performance Metrics, Interactive Charts |
+| **Reporting** | Automated PDF Report Generation |
+| **Deployment** | Vercel + Render |
+
+---
+
+## Why ACRO OS?
+
+Modern cloud infrastructures continuously process workloads with varying computational requirements. The effectiveness of a scheduling algorithm directly influences system throughput, waiting time, resource utilization, and overall performance.
+
+Most educational scheduling simulators execute algorithms against static datasets and provide limited insight into how scheduling decisions affect a running system.
+
+ACRO OS addresses this limitation by combining:
+
+- Configurable cloud infrastructure simulation
+- Dynamic workload generation
+- Multiple scheduling algorithms
+- Adaptive scheduler recommendation
+- Live operating system monitoring
+- Interactive analytics
+- Automated report generation
+
+This enables developers, students, and researchers to evaluate scheduling strategies under configurable cloud environments while simultaneously observing real operating system behaviour through live resource monitoring.
+
+---
+
+## Core Features
+
+### Cloud Simulation
+
+- Configurable host infrastructure
+- Virtual machine lifecycle management
 - Dynamic workload generation
 - Multiple simulation scenarios
-- Adjustable workload intensity profiles
-- Tick-based simulation engine
-- Adaptive scheduling framework
-- Five CPU scheduling algorithms
-- Scheduler comparison and recommendation
-- Real-time operating system monitoring
-- Live process adaptation
-- CPU, Memory, Disk and Network monitoring
-- WebSocket-based live updates
-- Interactive analytics dashboard
-- Performance comparison charts
-- PDF report generation
-- Modular REST API backend
-- Responsive React frontend
-
-This implementation demonstrates a complete cloud scheduling workflow beginning from workload generation and simulation, continuing through scheduler execution and adaptive decision making, and concluding with analytics, visualization, and report generation.
-
----
-
-# Why ACRO OS?
-
-Traditional operating system scheduling simulators generally execute algorithms on predefined workloads without considering the continuously changing behaviour of modern computing systems.
-
-Similarly, cloud scheduling simulators often ignore live operating system resource utilization and provide limited analytical capabilities.
-
-ACRO OS bridges this gap by combining cloud simulation with real-time operating system monitoring.
-
-The platform enables developers, students, and researchers to evaluate scheduling algorithms under configurable cloud environments while simultaneously analysing scheduler performance using live operating system workloads collected directly from the host machine.
-
-The modular architecture also allows new scheduling algorithms, simulation models, monitoring modules, and visualization components to be integrated with minimal changes to the existing codebase.
-
----
-
-# Core Features
-
-## Cloud Simulation
-
-- Dynamic host creation
-- Virtual machine lifecycle management
-- Configurable workload generation
-- Multiple simulation scenarios
-- Adjustable load intensity profiles
+- Adjustable workload intensity
 - Tick-based execution engine
 - Resource allocation simulation
-- Cloud infrastructure modelling
 
----
-
-## Adaptive Scheduling
-
-- Workload characteristic analysis
-- Automatic scheduler recommendation
-- Comparative scheduler evaluation
-- Dynamic scheduling selection
-- Performance-based scheduler ranking
-
----
-
-## Scheduling Algorithms
+### Scheduling Engine
 
 - First Come First Serve (FCFS)
 - Shortest Job First (SJF)
 - Priority Scheduling
 - Round Robin
 - Multi-Level Feedback Queue (MLFQ)
+- Adaptive Scheduler Framework
 
----
+### Live System Monitoring
 
-## Live Operating System Monitoring
-
-- CPU utilization monitoring
-- Memory monitoring
-- Disk utilization monitoring
-- Network activity monitoring
-- Live process monitoring
-- Top resource consuming processes
+- CPU utilization
+- Memory utilization
+- Disk usage
+- Network activity
+- Process monitoring
+- Top resource-consuming processes
 - Operating system information
-- Resource utilization history
-- Continuous WebSocket streaming
+- Continuous WebSocket updates
 
----
-
-## Performance Analytics
+### Analytics & Reporting
 
 - Waiting Time
 - Turnaround Time
 - Response Time
 - Throughput
 - CPU Utilization
-- Scheduler comparison
-- Performance visualization
-- Analytics dashboard
-- PDF report generation
+- Scheduler Comparison
+- Interactive Charts
+- PDF Report Generation
 
 ---
 
-## Frontend Dashboard
+## Technology Stack
 
-- Dashboard overview
-- Cluster management
-- Host management
-- Virtual Machine management
-- Scheduler Analysis
-- Live System Monitor
-- Analytics
-- Architecture visualization
-- System configuration
-- Real-time updates
-
-# Technology Stack
-
-| Layer | Technology | Purpose |
-|--------|------------|---------|
-| Frontend | React, Vite, Tailwind CSS | Interactive web dashboard and visualization |
-| Backend | FastAPI, Python | REST APIs, simulation engine, scheduler execution, analytics |
-| Real-Time Communication | WebSockets | Live operating system monitoring and dashboard updates |
-| Scheduling | FCFS, SJF, Priority, Round Robin, MLFQ | CPU scheduling and workload execution |
-| Monitoring | psutil | CPU, Memory, Disk, Network and Process monitoring |
-| Visualization | Recharts, React Circular Progressbar | Performance analytics and live charts |
+| Layer | Technologies | Purpose |
+|--------|--------------|---------|
+| Frontend | React, Vite, Tailwind CSS, Axios, Recharts | Interactive dashboard and visualization |
+| Backend | FastAPI, Python, Uvicorn | REST APIs, simulation engine, analytics |
+| Simulation | Custom Tick-Based Engine | Cloud infrastructure modelling and workload execution |
+| Scheduling | FCFS, SJF, Priority, Round Robin, MLFQ, Adaptive Scheduler | Workload scheduling and comparison |
+| Monitoring | psutil | Live operating system monitoring |
+| Real-Time Communication | WebSockets | Live resource updates |
 | Reporting | ReportLab | PDF report generation |
-| Simulation | Custom Simulation Engine | Host, VM, workload and cloud infrastructure simulation |
+| Deployment | Vercel, Render | Cloud deployment |
+
+---
+
+## Project Preview
+
+> Screenshots of the dashboard, analytics, architecture view, live monitor, and generated reports will be added here.
+
+| Dashboard | Analytics |
+|-----------|-----------|
+| ![](screenshots/dashboard.png) | ![](screenshots/analytics.png) |
+
+| Live Monitor | Architecture |
+|--------------|--------------|
+| ![](screenshots/live-monitor.png) | ![](screenshots/architecture.png) |
+
+| PDF Report |
+|------------|
+| ![](screenshots/report.png) |
+
+---
+
+## Table of Contents
+
+- Overview
+- Why ACRO OS?
+- Core Features
+- Technology Stack
+- System Architecture
+- Project Structure
+- Installation
+- Running Locally
+- Running the Cloud Simulation
+- Running Live System Monitoring
+- Deployment
+- Frontend Architecture
+- Backend Architecture
+- Request Lifecycle
+- Simulation Pipeline
+- Live Monitoring Pipeline
+- Adaptive Scheduler
+- Important Files
+- Future Enhancements
+- License
+
+---
+
+# System Workflow
+
+ACRO OS follows a modular execution pipeline that transforms user-defined cloud configurations into scheduling insights and performance analytics.
+
+```text
+                  User Configuration
+                          │
+                          ▼
+              Configure Cloud Environment
+                          │
+                          ▼
+                Generate Cloud Workloads
+                          │
+                          ▼
+            Execute Scheduling Algorithm
+                          │
+                          ▼
+          Collect Execution & Resource Metrics
+                          │
+                          ▼
+         Visualize Analytics & Live Monitoring
+                          │
+                          ▼
+              Generate Performance Report
+```
+
+Each stage of the pipeline is designed as an independent module, allowing new scheduling algorithms, monitoring components, and analytics features to be integrated without affecting the rest of the system.
 
 ---
 
 # System Architecture
 
-The project follows a modular layered architecture where each subsystem is responsible for a single domain of the scheduling platform.
+```mermaid
+flowchart LR
 
+A["React Dashboard"] -->|"REST API"| B["FastAPI Backend"]
+
+A -->|"WebSocket"| C["Monitoring Service"]
+
+B --> D["Simulation Engine"]
+
+D --> E["Scheduling Engine"]
+
+E --> F["Metrics Engine"]
+
+F --> G["Analytics Engine"]
+
+G --> H["PDF Report Generator"]
+
+C --> A
+
+F --> A
 ```
 
-                                   ACRO OS
-
-                           React Dashboard (Frontend)
-                                         │
-                    ┌────────────────────┴────────────────────┐
-                    │                                         │
-              REST API Requests                      WebSocket Stream
-                    │                                         │
-                    └────────────────────┬────────────────────┘
-                                         │
-                                  FastAPI Backend
-                                         │
-      ┌──────────────┬──────────────┬──────────────┬──────────────┐
-      │              │              │              │              │
-      ▼              ▼              ▼              ▼              ▼
-
- Simulation     Scheduling     Monitoring     Analytics     Reporting
-   Engine          Engine         Engine         Engine        Engine
-
-      │              │              │
-      │              │              │
-      ▼              ▼              ▼
-
-  Hosts        FCFS Scheduler     CPU
-
-  Virtual      SJF Scheduler      Memory
-
-  Machines      Priority          Disk
-
-  Workloads   Round Robin        Network
-
- Scenarios       MLFQ           Processes
-
-                  │
-
-         Adaptive Scheduler
-
-```
+The frontend communicates with the backend using REST APIs for simulation management and WebSockets for real-time monitoring. The backend orchestrates workload generation, scheduling, metrics collection, analytics, and report generation through a modular service architecture.
 
 ---
-
-# Overall Workflow
-
-The execution flow within ACRO OS consists of four major stages:
-
-1. Cloud infrastructure simulation.
-2. Scheduler execution.
-3. Performance evaluation.
-4. Live system monitoring and visualization.
-
-```
-
-        User Configuration
-
-               │
-
-               ▼
-
-      Cloud Simulation Engine
-
-               │
-
-        Host Allocation
-
-               │
-
-      Virtual Machine Creation
-
-               │
-
-      Workload Generation
-
-               │
-
-               ▼
-
-      Adaptive Scheduler
-
-               │
-
-      ┌────────┼─────────────┐
-      │        │             │
-
-    FCFS      SJF        Priority
-
-      │
-
- Round Robin
-
-      │
-
-    MLFQ
-
-               │
-
-               ▼
-
-      Metrics Engine
-
-               │
-
-               ▼
-
-      Analytics Engine
-
-               │
-
-               ▼
-
-     React Dashboard
-
-```
-
----
-
-# Cloud Simulation Architecture
-
-The simulation engine models a simplified cloud computing environment consisting of hosts, virtual machines, workloads, and scheduling policies.
-
-```
-
-Simulation Configuration
-
-          │
-
-          ▼
-
-Simulation Engine
-
-          │
-
- ┌────────┼──────────┐
-
- │        │          │
-
- ▼        ▼          ▼
-
-Hosts     Virtual    Workloads
-
-Machines
-
- │
-
- ▼
-
-Scheduler
-
- │
-
- ▼
-
-Performance Metrics
-
- │
-
- ▼
-
-Simulation Results
-
-```
-
----
-
-# Live Monitoring Architecture
-
-Unlike conventional scheduling simulators, ACRO OS continuously monitors the host operating system using live system statistics.
-
-```
-
-Operating System
-
-        │
-
-        ▼
-
-psutil Monitoring Layer
-
-        │
-
- ┌──────┼───────────────┐
-
- │      │       │       │
-
- ▼      ▼       ▼       ▼
-
-CPU   Memory   Disk   Network
-
-               │
-
-               ▼
-
-Process Monitor
-
-               │
-
-               ▼
-
-Monitoring Collector
-
-               │
-
-               ▼
-
-FastAPI WebSocket
-
-               │
-
-               ▼
-
-React Dashboard
-
-```
-
----
-
-# Adaptive Scheduling Pipeline
-
-One of the primary objectives of ACRO OS is selecting the most suitable scheduling algorithm for a given workload rather than executing a single scheduler.
-
-```
-
-Incoming Workloads
-
-        │
-
-        ▼
-
-Adaptive Scheduler
-
-        │
-
-        ▼
-
-Workload Analysis
-
-        │
-
- ┌──────┼───────────────┐
-
- │      │       │       │
-
- ▼      ▼       ▼       ▼
-
-FCFS    SJF   Priority  RR
-
-                │
-
-                ▼
-
-              MLFQ
-
-                │
-
-                ▼
-
-Performance Comparison
-
-                │
-
-                ▼
-
-Scheduler Recommendation
-
-```
-
----
-
-# Major Subsystems
-
-ACRO OS consists of six independent modules.
-
-| Module | Responsibility |
-|---------|----------------|
-| Simulation Engine | Creates cloud infrastructure, workloads and execution scenarios. |
-| Scheduling Engine | Executes scheduling algorithms and computes execution order. |
-| Adaptive Scheduler | Selects the optimal scheduling strategy based on workload characteristics. |
-| Monitoring Engine | Collects live operating system statistics using psutil. |
-| Analytics Engine | Computes scheduler metrics and comparative performance analysis. |
-| Reporting Engine | Generates downloadable PDF performance reports. |
 
 # Project Structure
 
-```
+```text
 ACRO-OS/
 
 ├── backend/
-│
 │   ├── api/
-│   │   ├── cluster_routes.py
-│   │   ├── vm_routes.py
-│   │   ├── scheduler_routes.py
-│   │   ├── analytics_routes.py
-│   │   ├── report_routes.py
-│   │   └── monitoring_routes.py
-│   │
 │   ├── monitoring/
-│   │   ├── monitoring_collector.py
-│   │   ├── system_monitor.py
-│   │   ├── process_monitor.py
-│   │   └── resource_monitor.py
-│   │
 │   ├── scheduling/
-│   │   ├── scheduler_runner.py
-│   │   ├── adaptive_scheduler.py
-│   │   ├── fcfs.py
-│   │   ├── sjf.py
-│   │   ├── priority.py
-│   │   ├── round_robin.py
-│   │   ├── mlfq.py
-│   │   └── metrics.py
-│   │
 │   ├── simulation/
-│   │   ├── simulation_engine.py
-│   │   ├── workload_generator.py
-│   │   ├── simulation_config.py
-│   │   ├── simulation_clock.py
-│   │   ├── simulation_scenarios.py
-│   │   ├── host.py
-│   │   ├── virtual_machine.py
-│   │   ├── workload.py
-│   │   └── cluster.py
-│   │
 │   ├── analytics/
-│   │   ├── analytics_engine.py
-│   │   ├── scheduler_analysis.py
-│   │   └── comparison.py
-│   │
 │   ├── reports/
-│   │   └── pdf_generator.py
-│   │
-│   ├── websocket/
-│   │   └── live_monitor.py
-│   │
-│   ├── process_adapter.py
-│   ├── main.py
-│   └── requirements.txt
+│   ├── models/
+│   ├── utils/
+│   └── main.py
 │
 ├── frontend/
-│
 │   ├── src/
-│   │
-│   ├── acro/
-│   │
-│   │   ├── components/
-│   │   │
-│   │   ├── charts/
-│   │   │
 │   │   ├── pages/
-│   │   │
+│   │   ├── components/
 │   │   ├── services/
-│   │   │
-│   │   ├── layouts/
-│   │   │
 │   │   ├── hooks/
-│   │   │
-│   │   └── utils/
+│   │   ├── context/
+│   │   └── assets/
 │   │
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── vite.config.js
-│
-├── docs/
+│   └── public/
 │
 ├── screenshots/
 │
-└── README.md
-
+├── README.md
+│
+└── requirements.txt
 ```
 
 ---
 
-# Backend Modules
+# Getting Started
 
-| Module | Responsibility |
-|---------|----------------|
-| api | Exposes REST APIs for simulation control, scheduler execution, analytics, reporting, and infrastructure management. |
-| simulation | Models cloud infrastructure, workload generation, hosts, virtual machines, execution ticks, and simulation scenarios. |
-| scheduling | Executes scheduling algorithms, adaptive scheduler logic, and performance metric computation. |
-| monitoring | Collects live CPU, memory, disk, network, and process statistics from the host operating system. |
-| analytics | Performs scheduler comparison, workload analysis, and statistical performance evaluation. |
-| reports | Generates downloadable PDF scheduler reports and analytics summaries. |
-| websocket | Streams live monitoring data from the backend to the React dashboard in real time. |
+## Prerequisites
 
----
+Before running ACRO OS locally, ensure the following software is installed.
 
-# Frontend Modules
-
-| Module | Responsibility |
-|---------|----------------|
-| components | Reusable UI components shared across the application. |
-| pages | Individual application pages including Dashboard, Cluster, Virtual Machines, Analytics, Scheduler Analysis, Live Monitor, Architecture, and Settings. |
-| charts | Interactive Recharts-based visualizations used for scheduler comparison and live analytics. |
-| services | REST API and WebSocket communication layer between the frontend and backend. |
-| layouts | Shared layouts including navigation sidebar and application shell. |
-| hooks | Custom React hooks for state management and real-time updates. |
-| utils | Common helper functions and utility methods. |
+| Software | Version |
+|-----------|----------|
+| Python | 3.11 or later |
+| Node.js | 18 or later |
+| npm | Latest |
+| Git | Latest |
 
 ---
 
-# Important Backend Files
+# Installation
 
-| File | Responsibility |
-|------|----------------|
-| backend/main.py | Starts the FastAPI application, registers REST APIs, and initializes WebSocket endpoints. |
-| monitoring/monitoring_collector.py | Aggregates all live monitoring information before streaming it to the frontend. |
-| monitoring/system_monitor.py | Collects CPU, memory, disk, swap, and operating system information using psutil. |
-| monitoring/process_monitor.py | Retrieves live process statistics and identifies top resource-consuming processes. |
-| monitoring/resource_monitor.py | Collects network activity and disk I/O statistics. |
-| process_adapter.py | Converts live operating system processes into scheduler-compatible workloads. |
-| simulation/workload_generator.py | Generates configurable workloads based on simulation scenarios and load intensities. |
-| simulation/simulation_engine.py | Controls simulation execution, tick progression, workload scheduling, and resource allocation. |
-| simulation/simulation_clock.py | Maintains the simulation clock and execution timeline. |
-| scheduling/adaptive_scheduler.py | Analyses workload characteristics and recommends the optimal scheduling algorithm. |
-| scheduling/scheduler_runner.py | Executes scheduling algorithms and computes execution metrics. |
-| scheduling/fcfs.py | First Come First Serve scheduling implementation. |
-| scheduling/sjf.py | Shortest Job First scheduling implementation. |
-| scheduling/priority.py | Priority Scheduling implementation. |
-| scheduling/round_robin.py | Round Robin scheduling implementation. |
-| scheduling/mlfq.py | Multi-Level Feedback Queue scheduling implementation. |
+Clone the repository.
 
----
+```bash
+git clone https://github.com/dhananjaiLN/ACRO-OS.git
 
-# Important Frontend Files
-
-| File | Responsibility |
-|------|----------------|
-| App.jsx | Defines the application routes and global layout. |
-| Dashboard.jsx | Displays the overall cloud infrastructure overview. |
-| Cluster.jsx | Manages cloud hosts and infrastructure resources. |
-| VirtualMachines.jsx | Displays and manages virtual machine instances. |
-| SchedulerAnalysis.jsx | Visualizes scheduler comparison metrics and algorithm recommendations. |
-| LiveMonitor.jsx | Displays real-time CPU, memory, disk, network, and process statistics streamed from the backend. |
-| Analytics.jsx | Presents scheduler analytics and workload performance visualizations. |
-| Architecture.jsx | Explains the complete ACRO OS architecture and execution pipeline. |
-| Settings.jsx | Allows users to configure simulation parameters before execution. |
-| LiveMonitorService.js | Manages persistent WebSocket communication with the FastAPI backend. |
-| SchedulerComparisonChart.jsx | Displays comparative scheduling performance using interactive charts. |
-
-# Core System Modules
-
-ACRO OS has been designed using a modular architecture where every subsystem performs a single responsibility while communicating through well-defined interfaces. This separation enables new scheduling algorithms, simulation models, monitoring modules, and visualization components to be integrated without affecting the rest of the platform.
-
----
-
-# Cloud Simulation Engine
-
-The Cloud Simulation Engine provides a configurable virtual cloud environment used for evaluating resource scheduling algorithms under different workload conditions.
-
-Instead of executing scheduling algorithms on predefined datasets, ACRO OS creates a complete simulation consisting of hosts, virtual machines, workloads, execution ticks, and resource allocation policies.
-
-The simulation engine manages the entire execution lifecycle, including workload generation, VM creation, scheduler invocation, metric collection, and simulation completion.
-
-## Responsibilities
-
-- Cloud infrastructure modelling
-- Host resource management
-- Virtual machine lifecycle management
-- Dynamic workload generation
-- Simulation clock management
-- Tick-based execution
-- Simulation scenario management
-- Resource allocation
-- Scheduler invocation
-
-### Simulation Pipeline
-
-```
-
-Simulation Configuration
-
-        │
-
-        ▼
-
-Simulation Engine
-
-        │
-
-        ▼
-
-Host Creation
-
-        │
-
-        ▼
-
-VM Allocation
-
-        │
-
-        ▼
-
-Workload Generation
-
-        │
-
-        ▼
-
-Scheduling Engine
-
-        │
-
-        ▼
-
-Metrics Collection
-
-        │
-
-        ▼
-
-Analytics Dashboard
-
+cd ACRO-OS
 ```
 
 ---
 
-# Workload Generator
+## Backend Setup
 
-The workload generator produces configurable virtual machine workloads that emulate different cloud computing environments.
+Navigate to the backend directory.
 
-Rather than relying on fixed execution datasets, workloads are generated dynamically based on the selected simulation scenario and workload intensity.
-
-Each generated workload contains scheduling attributes such as:
-
-- CPU demand
-- Memory demand
-- Execution time
-- Priority
-- Weight
-- CPU SLA
-- Memory SLA
-- Arrival time
-- Workload category
-
-Supported workload profiles include:
-
-- Web Server
-- Database
-- Microservices
-- AI Inference
-- Batch Processing
-
-Simulation scenarios currently include:
-
-- Mixed
-- Enterprise
-- AI Cluster
-- Database
-- Microservices
-
-Load intensity profiles:
-
-- Light
-- Normal
-- Heavy
-- Extreme
-
----
-
-# Scheduling Engine
-
-The Scheduling Engine executes scheduling algorithms independently of the simulation engine.
-
-This modular separation allows additional algorithms to be integrated without modifying the simulation framework.
-
-Each scheduler receives a workload queue and produces execution statistics including completion time, waiting time, turnaround time, response time, throughput, and CPU utilization.
-
-Implemented scheduling algorithms include:
-
-- First Come First Serve (FCFS)
-- Shortest Job First (SJF)
-- Priority Scheduling
-- Round Robin
-- Multi-Level Feedback Queue (MLFQ)
-
+```bash
+cd backend
 ```
 
-Incoming Workloads
+Create a virtual environment.
 
-        │
+```bash
+python -m venv venv
+```
 
-        ▼
+Activate the environment.
 
-Scheduling Engine
+### Windows
 
-        │
+```bash
+venv\Scripts\activate
+```
 
- ┌──────┼─────────────────────────┐
+### Linux / macOS
 
- │      │      │       │          │
+```bash
+source venv/bin/activate
+```
 
- ▼      ▼      ▼       ▼          ▼
+Install the required dependencies.
 
-FCFS   SJF  Priority   RR       MLFQ
+```bash
+pip install -r requirements.txt
+```
 
-        │
+Start the FastAPI server.
 
-        ▼
+```bash
+uvicorn main:app --reload
+```
 
-Execution Metrics
+The backend will be available at
 
+```text
+http://127.0.0.1:8000
+```
+
+Interactive API documentation:
+
+```text
+http://127.0.0.1:8000/docs
 ```
 
 ---
 
-# Adaptive Scheduling Framework
+## Frontend Setup
 
-One of the primary objectives of ACRO OS is to evaluate workload behaviour rather than execute a single scheduling algorithm.
+Open another terminal.
 
-The Adaptive Scheduling Framework analyses workload characteristics and executes multiple scheduling strategies before recommending the scheduler that delivers the most favourable performance.
-
-Scheduler recommendations are based on comparative evaluation of:
-
-- Average Waiting Time
-- Average Turnaround Time
-- Average Response Time
-- Throughput
-- CPU Utilization
-
-This enables objective comparison of scheduling algorithms under identical workload conditions.
-
-### Adaptive Scheduling Workflow
-
+```bash
+cd frontend
 ```
 
-Generated Workloads
+Install dependencies.
 
-        │
+```bash
+npm install
+```
 
-        ▼
+Start the development server.
 
-Scheduler Execution
+```bash
+npm run dev
+```
 
-        │
+The frontend will be available at
 
- ┌──────┼──────────────────────┐
-
- │      │      │       │       │
-
- ▼      ▼      ▼       ▼       ▼
-
-FCFS   SJF  Priority   RR    MLFQ
-
-        │
-
-        ▼
-
-Performance Metrics
-
-        │
-
-        ▼
-
-Analytics Engine
-
-        │
-
-        ▼
-
-Best Scheduler Recommendation
-
+```text
+http://localhost:5173
 ```
 
 ---
 
-# Live Monitoring Engine
+# Running ACRO OS
 
-The Live Monitoring Engine continuously collects operating system statistics using **psutil** and streams them to the frontend through WebSockets.
+Once both servers are running:
 
-Unlike traditional scheduling simulators that rely solely on synthetic workloads, ACRO OS supports evaluation using real operating system processes.
+1. Open the frontend in your browser.
+2. Configure the cloud infrastructure.
+3. Select a scheduling algorithm.
+4. Choose a workload scenario.
+5. Start the simulation.
+6. Observe workload execution.
+7. Compare scheduling metrics.
+8. Generate a PDF performance report.
+9. Open the Live Monitor page to observe real system resource usage.
 
-The monitoring engine periodically gathers:
+---
+
+# Running Live System Monitoring
+
+The Live Monitor continuously streams host operating system metrics using WebSockets.
+
+The monitoring dashboard provides:
 
 - CPU utilization
 - Memory usage
 - Disk utilization
 - Network statistics
-- Process statistics
-- Top resource-consuming processes
+- Process information
 - Operating system information
+- Real-time charts
 
-These metrics are aggregated before being streamed to the frontend, ensuring consistent updates across all dashboard components.
-
-### Live Monitoring Pipeline
-
-```
-
-Operating System
-
-        │
-
-        ▼
-
-System Monitor
-
-Process Monitor
-
-Resource Monitor
-
-        │
-
-        ▼
-
-Monitoring Collector
-
-        │
-
-        ▼
-
-WebSocket Server
-
-        │
-
-        ▼
-
-React Dashboard
-
-```
+Unlike the simulation engine, the monitoring module collects live statistics directly from the host operating system, enabling users to compare simulated scheduling behaviour with actual system resource utilization.
 
 ---
 
-# Process Adapter
+# Deployment
 
-The Process Adapter bridges the gap between live operating system processes and the scheduling engine.
+The project is deployed using separate frontend and backend services.
 
-Instead of creating synthetic workloads, the adapter converts active system processes into scheduler-compatible process models.
+| Component | Platform |
+|-----------|----------|
+| Frontend | Vercel |
+| Backend | Render |
 
-Each adapted process contains:
+## Live Deployment
 
-- Process ID
-- Process name
-- Arrival time
-- Estimated burst time
-- CPU utilization
-- Memory utilization
-- Thread count
-- Scheduling priority
+Frontend
 
-This allows scheduling algorithms to evaluate real operating system workloads using the same execution pipeline employed for simulated cloud environments.
+```text
+https://acro-os.vercel.app
+```
+
+Backend
+
+```text
+https://acro-os.onrender.com
+```
+
+For local development, update the frontend environment variables to point to your local FastAPI server.
 
 ---
-
-# Metrics Engine
-
-The Metrics Engine computes scheduler performance after every execution.
-
-Computed metrics include:
-
-- Average Waiting Time
-- Average Turnaround Time
-- Average Response Time
-- Throughput
-- CPU Utilization
-- Total Executed Processes
-- Scheduler Ranking
-
-These metrics are consumed by the Analytics Engine and displayed within the Scheduler Analysis dashboard.
 
 # Frontend Architecture
 
-The frontend is developed using **React** and **Vite**, providing a responsive single-page application that enables users to configure simulations, monitor live operating system resources, analyse scheduling algorithms, and visualize performance metrics.
+The frontend is built as a modular React application that provides an interactive dashboard for configuring cloud simulations, visualizing scheduling performance, monitoring live system resources, and generating reports.
 
-The application follows a modular component-based architecture where each page is responsible for a specific subsystem of ACRO OS.
+Rather than acting as a simple user interface, the frontend serves as the primary control center for the platform, communicating with the backend through REST APIs and WebSockets.
 
-## Frontend Pages
+## Frontend Responsibilities
 
-| Page | Responsibility |
-|------|----------------|
-| Dashboard | Displays an overview of the cloud infrastructure and scheduling platform. |
-| Cluster | Visualizes hosts, available resources, and infrastructure information. |
-| Virtual Machines | Displays active virtual machines and resource allocation. |
-| Scheduler Analysis | Executes scheduler comparison and displays performance metrics. |
-| Live Monitor | Streams real-time CPU, memory, disk, network, and process statistics from the backend. |
-| Analytics | Displays scheduler performance charts and comparative visualizations. |
-| Architecture | Documents the complete ACRO OS architecture and execution pipeline. |
-| Settings | Configures simulation parameters, workload generation, and scheduling options. |
+- Configure cloud simulation parameters
+- Select scheduling algorithms
+- Create workload scenarios
+- Display scheduler performance metrics
+- Visualize live operating system statistics
+- Compare scheduling algorithms
+- Generate downloadable reports
+- Display system architecture
 
 ---
 
 # Backend Architecture
 
-The backend is implemented using **FastAPI** and follows a modular service-oriented architecture.
+The backend is implemented using FastAPI and follows a modular service-oriented architecture.
 
-Instead of placing all functionality within a single application layer, ACRO OS separates simulation, scheduling, monitoring, analytics, reporting, and communication into independent modules.
+Each module is responsible for a single aspect of the platform, allowing components to evolve independently without affecting the rest of the system.
 
-This modular design enables each subsystem to evolve independently while maintaining clear interfaces between components.
+```text
+                   FastAPI Backend
 
-## Backend Services
+                          │
 
-| Service | Responsibility |
-|---------|----------------|
-| Simulation Service | Controls simulation lifecycle, workload generation, and cloud execution. |
-| Scheduler Service | Executes scheduling algorithms and computes execution metrics. |
-| Monitoring Service | Collects live operating system statistics using psutil. |
-| Analytics Service | Computes comparative scheduler performance and statistical analysis. |
-| Reporting Service | Generates downloadable PDF reports. |
-| WebSocket Service | Streams live monitoring updates to the frontend. |
+ ┌────────────┬────────────┬────────────┬────────────┐
+ │            │            │            │            │
+ ▼            ▼            ▼            ▼            ▼
 
----
-
-# REST API Design
-
-The frontend communicates with the backend through REST APIs for configuration, simulation control, scheduler execution, analytics retrieval, and infrastructure management.
-
-The REST layer exposes independent endpoints for each subsystem, allowing frontend components to interact with specific services without tightly coupling application logic.
-
-Typical API responsibilities include:
-
-- Starting and stopping simulations
-- Cluster management
-- Host management
-- Virtual machine management
-- Scheduler execution
-- Scheduler comparison
-- Analytics retrieval
-- Report generation
-- System configuration
-
-The REST architecture follows a resource-oriented design, enabling future extensions with minimal changes to existing endpoints.
-
----
-
-# WebSocket Communication
-
-Unlike conventional request-response architectures, ACRO OS uses persistent WebSocket connections to deliver live operating system statistics without requiring repeated client polling.
-
-Once a WebSocket connection is established, the backend continuously streams monitoring data collected from the Monitoring Engine.
-
-This approach provides significantly lower latency while reducing unnecessary HTTP requests.
-
-The streamed information includes:
-
-- CPU utilization
-- Memory usage
-- Disk utilization
-- Network activity
-- Process statistics
-- Top resource-consuming processes
-- System information
-
-### Live Communication Pipeline
-
+Simulation  Scheduling  Monitoring  Analytics  Reporting
+ Engine      Engine       Service      Engine      Engine
 ```
 
+Each service exposes well-defined interfaces, making it straightforward to introduce new scheduling algorithms, monitoring providers, or reporting formats.
+
+---
+
+# Request Lifecycle
+
+The following sequence illustrates what happens when a user starts a simulation.
+
+```text
+User
+ │
+ │ Configure Simulation
+ ▼
+React Dashboard
+ │
+ │ HTTP Request
+ ▼
+FastAPI Backend
+ │
+ ▼
+Simulation Engine
+ │
+ ▼
+Workload Generator
+ │
+ ▼
+Scheduling Engine
+ │
+ ▼
+Metrics Collector
+ │
+ ▼
+Analytics Engine
+ │
+ ▼
+JSON Response
+ │
+ ▼
+React Dashboard
+ │
+ ▼
+Charts & Tables
+```
+
+This request lifecycle separates simulation logic from presentation, ensuring that scheduling algorithms can evolve independently of the user interface.
+
+---
+
+# Simulation Pipeline
+
+The simulation engine models a configurable cloud environment consisting of hosts, virtual machines, workloads, and scheduling policies.
+
+Each simulation progresses through discrete execution ticks, allowing scheduling decisions to be evaluated over time.
+
+```text
+Simulation Configuration
+
+        │
+
+        ▼
+
+Generate Hosts
+
+        │
+
+        ▼
+
+Generate Virtual Machines
+
+        │
+
+        ▼
+
+Create Workloads
+
+        │
+
+        ▼
+
+Assign Scheduler
+
+        │
+
+        ▼
+
+Tick-Based Execution
+
+        │
+
+        ▼
+
+Collect Metrics
+
+        │
+
+        ▼
+
+Generate Analytics
+```
+
+During every simulation tick, the scheduler evaluates the waiting queue, allocates resources, updates process states, and records execution metrics.
+
+This design enables fair comparison between multiple scheduling algorithms under identical workload conditions.
+
+---
+
+# Live Monitoring Pipeline
+
+In addition to cloud simulation, ACRO OS continuously monitors the host operating system.
+
+Unlike the simulation engine, this module processes real system statistics collected from the host machine.
+
+```text
 Operating System
 
         │
 
         ▼
 
-Monitoring Engine
+psutil
 
         │
 
         ▼
 
-Monitoring Collector
+Monitoring Service
 
         │
 
         ▼
 
-FastAPI WebSocket
-
-        │
-
-        ▼
-
-LiveMonitorService
+WebSocket
 
         │
 
@@ -1022,89 +623,100 @@ LiveMonitorService
 
 React Dashboard
 
+        │
+
+        ▼
+
+Live Charts
 ```
 
----
+The monitoring service periodically gathers:
 
-# Analytics Engine
-
-The Analytics Engine is responsible for transforming scheduler execution results into meaningful performance insights.
-
-Following each scheduler execution, execution statistics are collected, normalized, and compared across all implemented scheduling algorithms.
-
-The Analytics Engine computes:
-
-- Waiting Time
-- Turnaround Time
-- Response Time
-- Throughput
-- CPU Utilization
-- Scheduler Ranking
-
-These metrics are visualized using interactive charts within the Scheduler Analysis dashboard, enabling direct comparison between scheduling strategies.
-
----
-
-# Dashboard Visualization
-
-The frontend dashboard provides a centralized interface for interacting with every subsystem of ACRO OS.
-
-Visualization components include:
-
-- Cluster overview
-- Host resource cards
-- Virtual machine information
-- Live CPU monitoring
+- CPU utilization
 - Memory utilization
 - Disk usage
 - Network statistics
-- Scheduler comparison charts
-- Performance metrics
-- Top running processes
-- Scheduler recommendation
-- Architecture documentation
+- Running processes
+- Operating system information
 
-All visualizations update dynamically using REST APIs and WebSocket streams.
+The collected metrics are streamed to connected clients using WebSockets, enabling real-time visualization without requiring manual page refreshes.
 
 ---
 
-# Report Generation
+# Adaptive Scheduler
 
-ACRO OS includes an integrated reporting subsystem capable of exporting scheduler execution results into PDF reports.
+One of the primary objectives of ACRO OS is to compare traditional scheduling strategies with a custom adaptive scheduling approach.
 
-Generated reports summarize:
+Unlike conventional schedulers that rely on a single decision criterion, the Adaptive Scheduler evaluates multiple workload characteristics before selecting the next task for execution.
 
-- Selected scheduling algorithm
-- Workload configuration
-- Simulation parameters
-- Execution metrics
-- Comparative scheduler analysis
-- Performance statistics
-- Resource utilization summary
+The scheduler considers factors such as:
 
-This functionality enables simulation results to be archived, shared, and analysed outside the application.
+- Process priority
+- Waiting time
+- Resource demand
+- Workload intensity
+- Current system utilization
+- Fairness between virtual machines
+
+Instead of applying a fixed scheduling policy, the Adaptive Scheduler dynamically adjusts scheduling decisions according to the characteristics of the current workload.
+
+This enables the platform to demonstrate how adaptive scheduling techniques can improve responsiveness and resource utilization across varying cloud scenarios.
 
 ---
 
-# Design Principles
+# Supported Scheduling Algorithms
 
-The architecture of ACRO OS follows several software engineering principles to ensure maintainability and extensibility.
+| Algorithm | Description |
+|-----------|-------------|
+| FCFS | Executes workloads in arrival order. |
+| SJF | Prioritizes workloads with the shortest execution time. |
+| Priority Scheduling | Executes workloads according to assigned priority levels. |
+| Round Robin | Shares CPU time fairly using configurable time slices. |
+| Multi-Level Feedback Queue (MLFQ) | Dynamically adjusts process priority across multiple queues. |
+| Adaptive Scheduler | Evaluates workload characteristics to recommend and execute the most appropriate scheduling strategy. |
 
-- Modular system design
-- Separation of concerns
-- Layered architecture
-- Reusable frontend components
-- Service-oriented backend architecture
-- Event-driven real-time communication
-- Configurable simulation workflows
-- Independent scheduling modules
-- Extensible monitoring framework
-- Scalable analytics pipeline
+---
 
-These principles allow new scheduling algorithms, monitoring modules, visualization components, and cloud simulation features to be integrated without restructuring the overall application architecture.
+# Important Files
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
-![React](https://img.shields.io/badge/React-Frontend-61DAFB)
-![WebSockets](https://img.shields.io/badge/WebSockets-RealTime-orange)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+| File / Module | Responsibility |
+|---------------|----------------|
+| `backend/main.py` | Starts the FastAPI application and registers all API routes. |
+| `backend/simulation/` | Implements the tick-based cloud simulation engine. |
+| `backend/scheduling/` | Contains scheduling algorithm implementations and execution logic. |
+| `backend/monitoring/` | Collects live operating system metrics using `psutil`. |
+| `backend/analytics/` | Computes scheduling metrics and comparative statistics. |
+| `backend/reports/` | Generates downloadable PDF reports. |
+| `frontend/src/pages/` | Dashboard pages for simulation, monitoring, analytics, and architecture. |
+| `frontend/src/components/` | Reusable UI components used across the application. |
+| `frontend/src/services/` | Handles REST API communication and WebSocket connections. |
+| `frontend/src/hooks/` | Custom React hooks for state management and live updates. |
+
+---
+
+---
+
+# Future Enhancements
+
+The modular architecture of ACRO OS enables the platform to evolve into a more comprehensive cloud resource orchestration platform.
+
+Potential future enhancements include:
+
+- Kubernetes-inspired scheduling strategies
+- Distributed multi-host simulation
+- Container workload support
+- SLA-aware scheduling
+- Energy-efficient scheduling algorithms
+- Machine learning-assisted scheduler recommendations
+- Historical simulation replay
+- Persistent simulation storage
+- Multi-user authentication
+- Cloud-native deployment support
+
+---
+
+## Author
+
+**S Vishnu Dhananjai**
+
+If you found this project interesting or have suggestions for improvement, feel free to open an issue or submit a pull request.
