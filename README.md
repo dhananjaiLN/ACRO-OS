@@ -267,8 +267,6 @@ ACRO-OS/
 │   │
 │   └── public/
 │
-├── screenshots/
-│
 ├── README.md
 │
 └── requirements.txt
